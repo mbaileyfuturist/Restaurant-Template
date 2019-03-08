@@ -1,0 +1,441 @@
+
+@media (min-width: 350px){
+    /*-----------HEADER--------------------------------------------------------------*/
+    .logo{
+        width:12rem;
+    }
+    .nav-link{
+        color:white;
+    }
+    .nav-link:hover{
+        color:white;
+        border-bottom: 3.25px solid #ffc107;
+        transition: color 0.2s, border-bottom 0.3s;
+    }
+    .header-text{
+        font-size: 1.5rem;
+        margin-right:20%;
+    }
+    .header-phrase{
+        margin-top:8%;
+        width:95%;
+        overflow:hidden;
+    }
+    .header-buttons{
+        overflow:hidden;
+        display:none;
+    }
+    .header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url(images/hero-image.jpg);
+        background-size: cover;
+        background-position: center;
+        height:45rem;
+        overflow:hidden;
+        margin-bottom:15%;
+    }
+    /*----------WHAT WE BELEIVE------------------------------------------------------*/
+    .chef-img-container{
+        margin-bottom:10%;
+    }
+    .what-we-beleive-text, .location-description, .share-your-experiance-text{
+        font-size:1.25rem;
+        line-height:2rem;
+    }
+    .chef-img{
+        width:20rem;
+        height:auto;
+    }
+    /*-----------MEAL TIMES----------------------------------------------------------*/
+    #meal-times{
+        padding-top:10%;
+        padding-bottom:10%;
+        margin-bottom:10%;
+    }
+
+    .meal-time-title:hover{
+        color:#ffc107
+    }
+
+     /*Default Cards*/
+     .brunch-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/brunch.jpg");
+        background-size: cover;
+    }
+    .mid-day-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/mid-day.jpg");
+        background-size: cover;
+    }
+    .dinner-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/dinner.jpg");
+        background-size: cover;
+    }
+    .desserts-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/desserts.jpg");
+        background-size: cover;
+    }
+    .happy-hour-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/happy-hour.jpg");
+        background-size: cover;
+    }
+    .beverages-card-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/beverages.jpg");
+        background-size: cover;
+    }
+    /*Hover Over Cards*/
+    .brunch-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/brunch.jpg")}
+    .mid-day-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/mid-day.jpg");}
+    .dinner-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/dinner.jpg");}
+    .desserts-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/desserts.jpg");}
+    .happy-hour-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/happy-hour.jpg");}
+    .beverages-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/beverages.jpg");}
+    .brunch-card-header, .mid-day-card-header, .dinner-card-header, .desserts-card-header, .happy-hour-card-header, .beverages-card-header{
+        height:5.5em;
+    }
+    /*-----------MAPS---------------------------------------------------------------*/
+    .location-title{
+        text-align:center;
+    }
+    #map{
+        width:20rem;
+        height:20rem;
+    }
+    /*-----------CONTACT US---------------------------------------------------------*/
+    .contact-us{
+        padding-bottom:10%;
+    }
+    .contact-card{
+        width:17.5rem;
+    }
+    /*-----------FOOTER-------------------------------------------------------------*/
+    footer{
+        overflow:hidden;
+    }
+    .copywrite{
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom:0%;
+    }
+    .social-logo{
+        font-size:2rem;
+        color:white;
+    }
+    .social-logo:hover{
+        font-size:2.25rem;
+        color:#ffc107;
+    }
+    .footer-link{
+        color:white;
+        text-decoration:none;
+    }
+    .footer-link:hover{
+        color:#ffc107;
+        text-decoration:none;
+    }
+    .footer-list{
+        font-size:110%;
+        display:block;
+    }
+    /*-------------OTHERS------------------------------------------------------------------------*/
+    .location-contents, .share-your-experiance-text{
+        margin-top:10%;
+        margin-bottom:10%;
+    }
+    .contact-us-contents, .meal-times-container, .location, .what-we-beleive{
+        width:95%;
+        overflow:hidden;
+    }
+    .section-title{
+        font-size:1.75rem;
+    }
+    
+}
+
+
+
+@media (min-width: 400px){
+
+    .chef-img-container{
+        margin-left:5%;
+    }
+    .card-form{
+        margin-left:9%;
+    }
+    
+}
+
+@media (min-width: 450px){
+
+    .chef-img-container{
+        margin-left:10%;
+    }
+    .card-form{
+        margin-left:10%;
+    }
+    .location-title{
+        text-align: center;
+    }
+
+}
+
+
+
+
+@media (min-width: 500px){
+    /*------------HTML--------------------------------------------------------------*/
+    html{
+        scroll-behavior: smooth;
+    }
+    .section-title{
+        margin-top:10%;
+        margin-bottom:5%;
+    }
+    ion-icon{
+        font-size:3.5rem;
+        color:white;
+    }
+    ion-icon:hover{
+        color:#ffc107;
+    }
+    .contact-us-contents, .meal-times-container, .location, .what-we-beleive{
+        width:90%;
+    }
+    /*------------HEADER------------------------------------------------------------*/
+   
+    .logo{
+       width:17rem;
+   }
+    .nav-link{
+        color:white;
+    }
+
+    .nav-link:hover{
+        color:white;
+        border-bottom: 3.25px solid #ffc107;
+        transition: color 0.2s, border-bottom 0.3s;
+    }
+    header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url(static/hero-image.jpg);
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        overflow:hidden;
+    }
+    .header-phrase{
+        margin-top:30%;
+    }
+    /*------------WHAT WE BELEIVE---------------------------------------------------*/
+    .what-we-beleive-container{
+        margin-bottom:15%;
+    }
+    .chef-img{
+        width:30rem;
+    }
+    .chef-img-container{
+        margin-left:3%;
+    }
+    
+    /*------------MEALTIMES---------------------------------------------------------*/
+    .meal-times-container{
+        padding-top:10%;
+        padding-bottom:10%;
+    }
+    .meal-time-title{
+        color:white;
+        text-decoration: none;
+    }
+     /*Default Cards*/
+     .brunch-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/brunch.jpg");}
+     .mid-day-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/mid-day.jpg");}
+     .dinner-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/dinner.jpg");}
+     .desserts-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/desserts.jpg");}
+     .happy-hour-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/happy-hour.jpg");}
+     .beverages-card-header{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("images/beverages.jpg");}
+ 
+     /*Hover Over Cards*/
+     .brunch-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/brunch.jpg")}
+     .mid-day-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/mid-day.jpg");}
+     .dinner-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/dinner.jpg");}
+     .desserts-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/desserts.jpg");}
+     .happy-hour-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/happy-hour.jpg");}
+     .beverages-card-header:hover{background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0)), url("images/beverages.jpg");}
+     .brunch-card-header, .mid-day-card-header, .dinner-card-header, .desserts-card-header, .happy-hour-card-header, .beverages-card-header{
+        background-size: cover;
+        background-position: center;
+        height:8rem;
+    }
+    /*------------LOCATIONS---------------------------------------------------------*/
+    .location-contents{
+        margin-bottom:15%;
+        margin-top:15%;
+    }
+    /*------------CONTACT-US--------------------------------------------------------*/
+    .contact-card{
+        width:25rem;
+        margin-left:0%;
+    }
+    
+    
+}
+
+@media (min-width: 600px){
+
+    .chef-img{
+        width:30rem;
+        height:auto;
+    }
+    .brunch-card-header, .mid-day-card-header, .dinner-card-header, .desserts-card-header, .happy-hour-card-header, .beverages-card-header{
+        background-size: cover;
+        background-position: center;
+        height:5rem;
+    }
+    .location-title{
+        text-align:center;
+    }
+    #map{
+        width:40rem;
+        height:20rem;
+    }
+    .contact-card{
+        margin-left:8%;
+        width:25rem;
+    }
+
+}
+
+
+
+
+@media (min-width: 700px){
+
+    .chef-img{
+        width:40rem;
+        height:auto;
+    }
+    .chef-img-container{
+        margin-left: 0%;
+    }
+    .contact-card{
+        width:30rem;
+    }
+    .social-logo{
+        font-size: 3.5rem;
+    }
+    .social-logo:hover{
+        font-size: 3.75rem;
+    }
+
+}
+
+
+
+
+@media (min-width: 800px){
+   
+    .header-phrase{
+        margin-top:15%;
+    }
+    .header-buttons{
+        display:inline-block;
+        margin-top:5%;
+        width:90%;
+    }
+    .brunch-card-header, .mid-day-card-header, .dinner-card-header, .desserts-card-header, .happy-hour-card-header, .beverages-card-header{
+        height:8rem;
+    }
+    .chef-img{
+        width:50rem;
+        height:auto;
+    }
+    .contact-card{
+        width:40rem;
+        margin-left:0%;
+    }    
+
+}
+
+
+
+
+@media (min-width: 900px){
+    /*------------HEADER------------------------------------------------------------*/
+    .nav-list{
+        width:90%;
+    }
+    .nav-list li{
+        margin-left:10%;
+    }
+    .navbar{
+        margin-top:5%;
+    }
+    .logo-header{
+        text-align:center;
+        margin-top:5%;
+    }
+    .logo{
+        width:25rem;
+    }
+    .header-phrase{
+        margin-top:5%;
+    }
+    .header-buttons{
+        margin-bottom:2%;
+    }
+    /*----------MEAL TIMES----------------------------------------------------------------*/
+    .meal-times-container{
+        padding-top:0%;
+        padding-bottom:0%;
+    }
+    .meal-time-title{
+        color:white;
+        text-decoration:none;
+    }
+    .meal-time-title:hover{
+        color:#ffc107;
+        text-decoration:none;
+    }
+    .chef-img-container{
+        width:40rem;
+    }
+    .chef-img{
+        width:100%;
+    }
+
+    /*-----------MAPS---------------------------------------------------------------*/
+    .location-title{
+        text-align:left;
+    }
+    #map{
+        width:25rem;
+        height:20rem;
+    }
+    /*----------CONTACT US*---------------------------------------------------------*/
+    .contact-card{
+        width:30rem;
+        margin-top:10%;
+    }
+    /*----------FOOTER-------------------------------------------------------------*/   
+    .footer-header{
+        padding:.25%;
+    }
+    .bottom-footer{
+        padding-top:.25%;
+    }
+    .social-logo{
+        font-size: 4rem;
+    }
+    .social-logo:hover{
+        font-size: 4.25rem;
+    }
+    .footer-nav{
+        
+        margin-top:0%;
+    }
+}
+
+@media (min-width: 1350px){
+
+    #map{
+        width:35rem;
+    }
+
+}
