@@ -1,6 +1,6 @@
 <?php 
     //Connect to database.
-    $conn  = mysqli_connect('localhost', 'Micheal', '', 'restaurant_experience');
+    $conn  = mysqli_connect('localhost', 'Micheal', 'mikespasword123', 'restaurant_experience');
 
    //Check Connection.
    if(!$conn){

@@ -4,17 +4,41 @@
       //Database connection.
       include('../config/db_connect.php');
 
+      $empty = false;
+      $errors = array('name' => '', 'email' => '', 'number' => '', 'message' => '');
+
       //Protection from SQLInjection.
       $name = mysqli_real_escape_string($conn, $_POST['name']);
       $email = mysqli_real_escape_string($conn, $_POST['email']);
       $phoneNumber = mysqli_real_escape_string($conn, $_POST['phone_number']);
       $message = mysqli_real_escape_string($conn, $_POST['message']);
 
-      //SQL insert query
-      $sql = "INSERT INTO experiances(name, email, number, message) VALUES('$name', '$email', '$phoneNumber', '$message')";
+      //Form Validation for empty input.
+      if(empty($_POST['name'])){
+        $empty = true;
+        $errors['name'] = 'Please enter a valid name.';
+      }
+      if(empty($_POST['email'])){
+        $empty = true;
+        $errors['email'] = 'Please enter a valid email.';
+      }
+      if(empty($_POST['phone_number'])){
+        $empty = true;
+        $errors['phone_number'] = 'Please enter a valid phone number.';
+      }
+      if(empty($_POST['message'])){
+        $empty = true;
+        $errors['message'] = 'Please enter a valid message.';
+      }
+
+      if(!$empty){
+        //SQL insert query
+        $sql = "INSERT INTO experiances(name, email, number, message) VALUES('$name', '$email', '$phoneNumber', '$message')";
       
-      //Insert value.
-      mysqli_query($conn, $sql);
+        //Insert value.
+        mysqli_query($conn, $sql);
+      }
+     
   }
 ?>
 
@@ -431,21 +455,21 @@
                 <div class="card-body">
                   <form action="index.php" method="POST">
                       <div class="form-title text-left">
-                          <label class="text-white">Name</label>
+                          <label class="text-white">Name <p class="text-danger"><?php echo $errors['name'] ?></p></label>
                         </div>
                     <div class="form-group">
                       <input type="text" class="form-control border-warning form-control-md" name="name">
                     </div>
   
                     <div class="form-title text-left">
-                        <label class="text-white">email</label>
+                        <label class="text-white">email<p class="text-danger"><?php echo $errors['email'] ?></label>
                       </div>
                     <div class="form-group">
                       <input type="email" class="form-control border-warning form-control-md" name="email">
                     </div>
   
                     <div class="form-title text-left">
-                        <label class="text-white">Phone number</label>
+                        <label class="text-white">Phone number<p class="text-danger"><?php echo $errors['phone_number'] ?></label>
                       </div>
 
                     <div class="form-group">
@@ -453,7 +477,7 @@
                     </div>
                     
                     <div class="form-title text-left">
-                      <label class="text-white">Message</label>
+                      <label class="text-white">Message<p class="text-danger"><?php echo $errors['message'] ?></label>
                     </div>
 
                     <div class="form-group ext-left">
@@ -466,6 +490,7 @@
               </div>
         </div>
     </div>
+
   </section>
 
   <!--In the footer put the Social Media Links, address and location.-->
