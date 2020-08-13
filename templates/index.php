@@ -1,11 +1,11 @@
 <?php
+
+$errors = array('name' => '', 'email' => '', 'phone_number' => '', 'message' => '');
+
   if(isset($_POST['submit'])){
       
       //Database connection.
       include('../config/db_connect.php');
-
-      $empty = false;
-      $errors = array('name' => '', 'email' => '', 'number' => '', 'message' => '');
 
       //Protection from SQLInjection.
       $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -15,19 +15,15 @@
 
       //Form Validation for empty input.
       if(empty($_POST['name'])){
-        $empty = true;
         $errors['name'] = 'Please enter a valid name.';
       }
       if(empty($_POST['email'])){
-        $empty = true;
         $errors['email'] = 'Please enter a valid email.';
       }
       if(empty($_POST['phone_number'])){
-        $empty = true;
         $errors['phone_number'] = 'Please enter a valid phone number.';
       }
       if(empty($_POST['message'])){
-        $empty = true;
         $errors['message'] = 'Please enter a valid message.';
       }
 
@@ -432,7 +428,7 @@
       </div>
       
       <div class="map-container col span-1-of-2 mr-3">
-        <div class="m-auto" id="map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24802.30495846947!2d-77.03539693827904!3d39.008740582575456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cf4e666ae927%3A0x8433a865b29adf!2sSilver%20Spring%2C%20MD!5e0!3m2!1sen!2sus!4v1597330702191!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </div>
   </section>
